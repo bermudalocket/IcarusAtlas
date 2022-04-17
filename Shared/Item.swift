@@ -8,12 +8,17 @@
 import Foundation
 
 struct Item: Hashable, Identifiable {
+
+    /// Conformance to `Identifiable` is required to display this type in a SwiftUI `List`.
     var id = UUID()
+
     let name: String
     let recipe: [Item: Int]?
 }
 
 extension Item {
+    /// Convenience init for recipe-less items like fiber, wood
+    /// - Parameter name: Display name
     init(name: String) {
         self = .init(name: name, recipe: nil)
     }
@@ -21,11 +26,6 @@ extension Item {
 
 extension Item {
     public static let all: [Item] = [ .fiber, .wood, .stone, .leather, .craftingBench ]
-
-    public static var allItems: [Item] {
-        let mirror = Mirror(reflecting: self)
-        return mirror.children.compactMap { Item(name: "\($0)") }
-    }
 
     public static let fiber = Item(name: "Fiber")
     public static let wood = Item(name: "Wood")
@@ -39,7 +39,7 @@ extension Item {
     public static let platinumOre = Item(name: "Platinum Ore")
     public static let titaniumOre = Item(name: "Titanium Ore")
 
-    public static let craftingBench = Item(
+    public static let craftingBench = Self(
         name: "Crafting Bench",
         recipe: [
             .fiber: 60,
