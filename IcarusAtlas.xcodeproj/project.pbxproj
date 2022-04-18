@@ -17,6 +17,10 @@
 		896A754927F64EE800268E76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896A751F27F64EE600268E76 /* ContentView.swift */; };
 		896A754A27F64EE800268E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896A752027F64EE800268E76 /* Assets.xcassets */; };
 		896A754B27F64EE800268E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 896A752027F64EE800268E76 /* Assets.xcassets */; };
+		896A755B27F64F3700268E76 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896A755A27F64F3700268E76 /* Item.swift */; };
+		896A755C27F64F3700268E76 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896A755A27F64F3700268E76 /* Item.swift */; };
+		89D815B227FA341E00268E76 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D815B127FA341E00268E76 /* Recipe.swift */; };
+		89D815B327FA341E00268E76 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D815B127FA341E00268E76 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 		896A753E27F64EE800268E76 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		896A754227F64EE800268E76 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		896A754427F64EE800268E76 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		896A755A27F64F3700268E76 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		89D815B127FA341E00268E76 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 			children = (
 				896A751E27F64EE600268E76 /* IcarusAtlasApp.swift */,
 				896A751F27F64EE600268E76 /* ContentView.swift */,
+				896A755A27F64F3700268E76 /* Item.swift */,
+				89D815B127FA341E00268E76 /* Recipe.swift */,
 				896A752027F64EE800268E76 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -300,7 +308,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				896A754827F64EE800268E76 /* ContentView.swift in Sources */,
+				896A755B27F64F3700268E76 /* Item.swift in Sources */,
 				896A754627F64EE800268E76 /* IcarusAtlasApp.swift in Sources */,
+				89D815B227FA341E00268E76 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +319,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				896A754927F64EE800268E76 /* ContentView.swift in Sources */,
+				896A755C27F64F3700268E76 /* Item.swift in Sources */,
 				896A754727F64EE800268E76 /* IcarusAtlasApp.swift in Sources */,
+				89D815B327FA341E00268E76 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +475,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2VZ489BR9H;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -493,7 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2VZ489BR9H;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -526,7 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2VZ489BR9H;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -554,7 +566,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2VZ489BR9H;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
